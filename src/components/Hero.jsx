@@ -40,6 +40,34 @@ function Hero() {
         >
           {personalInfo.description}
         </motion.p>
+        <div className="mt-10 flex justify-center gap-4 flex-wrap">
+          <a
+            href="#projects"
+            className="
+      px-6 py-3
+      rounded-full
+      bg-purple-600
+      hover:bg-purple-700
+      transition
+    "
+          >
+            View Projects
+          </a>
+
+          <a
+            href="#contact"
+            className="
+      px-6 py-3
+      rounded-full
+      border
+      border-white/20
+      hover:border-purple-500
+      transition
+    "
+          >
+            Contact Me
+          </a>
+        </div>
       </div>
     </section>
   );
