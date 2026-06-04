@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import AnimatedBackground from "./components/AnimatedBackground";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
 
       <Hero />
       <About />
-      <Skills/>
+      <Skills />
+      <Experience />
+      <Projects />
     </main>
   );
 }
