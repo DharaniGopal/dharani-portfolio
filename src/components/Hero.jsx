@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import personalInfo from "../pages/personalInfo";
+import resumePDF from "../assets/resume.pdf";
 
 function Hero() {
   return (
@@ -67,6 +68,40 @@ function Hero() {
           >
             Contact Me
           </a>
+          <a
+            href={resumePDF}
+            download="Dharani_Gopal_FronEnd_Resume.pdf"
+            className="
+    px-6
+    py-3
+    rounded-full
+    border
+    border-purple-500
+    hover:bg-purple-500
+    transition
+  "
+          >
+            Download Resume
+          </a>
+          <div className="mt-16 grid grid-cols-3 gap-10">
+            <div>
+              <h3 className="text-4xl font-bold text-purple-400">3.10+</h3>
+
+              <p className="text-gray-500">Years Experience</p>
+            </div>
+
+            <div>
+              <h3 className="text-4xl font-bold text-purple-400">15+</h3>
+
+              <p className="text-gray-500">ERP Modules</p>
+            </div>
+
+            <div>
+              <h3 className="text-4xl font-bold text-purple-400">20+</h3>
+
+              <p className="text-gray-500">Reusable Components</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
