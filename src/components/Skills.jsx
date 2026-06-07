@@ -30,11 +30,13 @@ function Skills() {
             className="
                 rounded-2xl
                 border
-                border-white/10
-                bg-white/5
+              border-black/10
+              dark:border-white/10
+              bg-black/[0.03]
+              dark:bg-white/5
                 backdrop-blur-xl
                 p-6
-                hover:border-purple-500/40
+              hover:border-purple-500/40
                 transition-all
                 duration-300
               "

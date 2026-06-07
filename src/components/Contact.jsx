@@ -40,7 +40,9 @@ function Contact() {
             flex items-center gap-2
             px-6 py-3
             rounded-xl
-            border border-white/10
+            border 
+          border-black/10
+          dark:border-white/10
             hover:border-blue-500
             transition
           "
@@ -59,7 +61,9 @@ function Contact() {
             flex items-center gap-2
             px-6 py-3
             rounded-xl
-            border border-white/10
+            border
+          border-black/10
+          dark:border-white/10
             hover:border-gray-400
             transition
           "

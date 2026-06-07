@@ -16,7 +16,7 @@ function About() {
         whileInView={{ opacity: 1 }}
         initial={{ opacity: 0 }}
         viewport={{ once: true }}
-        className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8"
+        className="rounded-3xl borderborder-black/10 dark:border-white/10 bg-white/5 backdrop-blur-xl p-8"
       >
         <p className="leading-8 text-gray-400">
           I'm a passionate Frontend Developer with 3+ years of experience
