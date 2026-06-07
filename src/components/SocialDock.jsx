@@ -11,34 +11,31 @@ function SocialDock() {
         fixed
         left-6
         bottom-8
-        hidden
-        lg:flex
-        flex-col
-        gap-5
         z-50
+        flex
+        flex-col
+        gap-4
       "
     >
       <a
         href="https://github.com/DharaniGopal"
         target="_blank"
+        rel="noreferrer"
       >
         <FaGithub size={22} />
       </a>
 
       <a
-        href="https://linkedin.com"
+        href="https://linkedin.com/in/dharanigopal"
         target="_blank"
+        rel="noreferrer"
       >
         <FaLinkedin size={22} />
       </a>
 
-      <a
-        href="mailto:dharanigopal100897@gmail.com"
-      >
+      <a href="mailto:dharanigopal100897@gmail.com">
         <FaEnvelope size={22} />
       </a>
-
-      <div className="w-px h-20 bg-white/20 mx-auto" />
     </div>
   );
 }

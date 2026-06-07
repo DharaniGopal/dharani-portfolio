@@ -1,17 +1,30 @@
 const personalInfo = {
   name: "Dharani Gopal",
+
   role: "Frontend Developer",
 
-  experience: "3.10+ Years",
+  location: "Chennai, Tamil Nadu",
 
-  description:
-    "Frontend Developer specializing in React.js, Material UI, Redux Toolkit, Formik and scalable enterprise applications.",
+  email: "dharanigl1008@gmail.com",
+
+  phone: "+91 9524815273",
+
+  experience: "3+ Years",
+
+  linkedin: "https://linkedin.com/in/dharanigopal",
 
   github: "https://github.com/DharaniGopal",
 
-  linkedin: "YOUR_LINKEDIN_URL",
+  description:
+    "Frontend Developer with 3+ years of experience building scalable React applications, ERP systems, reusable UI architectures, and high-performance web platforms. Specialized in React, Redux Toolkit, Material UI, Tailwind CSS, and frontend optimization.",
 
-  email: "dharanigopal100897@gmail.com",
+  highlights: [
+    "Built 15+ ERP Modules",
+    "20+ Reusable Components",
+    "50+ API Integrations",
+    "40x Revenue Growth Impact",
+    "Reduced Load Time from 2s to 400ms",
+  ],
 };
 
 export default personalInfo;

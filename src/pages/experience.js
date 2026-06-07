@@ -1,15 +1,47 @@
 const experience = [
   {
-    company: "Eucto",
+    company: "Eucto Technologies",
     role: "Frontend Developer",
-    duration: "Oct 2022 - Present",
+    period: "2024 - Present",
 
-    description: [
-      "Developed ERP modules using React.js.",
-      "Built reusable component architecture.",
-      "Integrated REST APIs and state management.",
-      "Worked with Material UI, Formik and Redux Toolkit.",
-      "Developed attendance, certificate and finance modules.",
+    achievements: [
+      "Developed School ERP System modules",
+      "Built Attendance Management System",
+      "Implemented Certificate Generation Module",
+      "Created Notice Board & Announcement Systems",
+      "Developed Ledger Summary & Finance Modules",
+      "Built Staff Management Features",
+      "Implemented Feature Flag Architecture",
+      "Improved performance using lazy loading and code splitting",
+    ],
+
+    tech: [
+      "React",
+      "Redux Toolkit",
+      "Material UI",
+      "Tailwind CSS",
+    ],
+  },
+
+  {
+    company: "Bizgam AI Pvt Ltd",
+    role: "Frontend Developer",
+    period: "2021 - 2024",
+
+    achievements: [
+      "Built Effybuy RFQ & Auction Platform from scratch",
+      "Contributed to 40x revenue growth",
+      "Developed multiple React portals",
+      "Created SEO-optimized business websites",
+      "Implemented caching, lazy loading and pagination",
+      "Built dynamic form systems",
+      "Developed reusable component architecture",
+    ],
+
+    tech: [
+      "React",
+      "Redux",
+      "JavaScript",
     ],
   },
 ];

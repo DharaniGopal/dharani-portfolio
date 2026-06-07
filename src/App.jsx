@@ -9,21 +9,39 @@ import Footer from "./components/Footer";
 import ScrollProgress from "./components/ScrollProgress";
 import SocialDock from "./components/SocialDock";
 import AnimatedBackground from "./components/AnimatedBackground";
+import Highlights from "./components/Highlights";
+import Education from "./components/Education";
+import BackgroundGlow from "./components/BackgroundGlow";
+import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
   return (
-    <main className="bg-[#050505] text-white">
+    <main
+      className="
+    min-h-screen
+    bg-white
+    text-black
+    dark:bg-[#050505]
+    dark:text-white
+    transition-all
+    duration-300
+  "
+    >
+      <ThemeToggle />
       <ScrollProgress />
       <AnimatedBackground />
       <SocialDock />
+      <BackgroundGlow />
 
       <Navbar />
 
       <Hero />
       <About />
+      <Highlights />
       <Skills />
       <Experience />
       <Projects />
+      <Education />
       <Contact />
       <Footer />
     </main>
