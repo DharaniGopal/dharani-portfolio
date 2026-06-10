@@ -44,30 +44,21 @@ function Hero() {
           </span>
         </motion.h1>
 
-        {/* <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="text-5xl md:text-7xl font-bold"
-        >
-          {personalInfo.name}
-        </motion.h1> */}
-
         <div
           className="
-    inline-flex
-    items-center
-    gap-2
-    px-4
-    py-2
-    rounded-full
-    border
-    border-green-500/30
-    bg-green-500/10
-    text-green-400
-    text-sm
-    mb-6
-  "
+          inline-flex
+          items-center
+          gap-2
+          px-4
+          py-2
+          rounded-full
+          border
+          border-green-500/30
+          bg-green-500/10
+          text-green-400
+          text-sm
+          mb-6
+        "
         >
           <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
           Available for Frontend Opportunities
@@ -105,13 +96,13 @@ function Hero() {
           <PremiumCard className="p-6">
             <div className="text-4xl mb-4">📈</div>
 
-            <h3 className="text-xl font-semibold mb-2">ERP Specialist</h3>
+            <h3 className="text-xl font-semibold mb-2">
+              Multi-Domain Expertise
+            </h3>
 
-            <p
-              className="text-gray-60 dark:text-gray-400"
-            >
-              Developed multiple School ERP modules including Attendance,
-              Certificates, Finance, Staff and Student Management systems.
+            <p className="text-gray-60 dark:text-gray-400">
+              Built web applications across ERP, CRM, Matrimony, Auction, RFQ
+              Systems, Admin Portals, and Corporate Websites.
             </p>
           </PremiumCard>
 
@@ -121,8 +112,8 @@ function Hero() {
             <h3 className="text-xl font-semibold mb-2">Performance Focused</h3>
 
             <p className="text-gray-600 dark:text-gray-400">
-              Optimized React applications using lazy loading, caching, code
-              splitting and reusable component architecture.
+              Optimized React applications using lazy loading, code splitting,
+              caching, memoization, reusable component architecture.
             </p>
           </PremiumCard>
         </div>
