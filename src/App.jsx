@@ -11,27 +11,29 @@ import SocialDock from "./components/SocialDock";
 import AnimatedBackground from "./components/AnimatedBackground";
 import Highlights from "./components/Highlights";
 import Education from "./components/Education";
-import BackgroundGlow from "./components/BackgroundGlow";
+// import BackgroundGlow from "./components/BackgroundGlow";
 import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
   return (
     <main
       className="
-    min-h-screen
-    bg-white
-    text-black
-    dark:bg-[#050505]
-    dark:text-white
-    transition-all
-    duration-300
-  "
+        min-h-screen
+        bg-slate-50
+        text-slate-900
+
+        dark:bg-[#050505]
+        dark:text-white
+
+        transition-all
+        duration-300
+      "
     >
       <ThemeToggle />
       <ScrollProgress />
       <AnimatedBackground />
       <SocialDock />
-      <BackgroundGlow />
+      {/* <BackgroundGlow /> */}
 
       <Navbar />
 

@@ -19,9 +19,15 @@ function BackgroundGlow() {
           w-96
           h-96
           rounded-full
-          bg-purple-600/20
-          blur-[120px]
+
+          bg-purple-500/5
+          dark:bg-purple-600/20
+
+          blur-[80px]
+          dark:blur-[120px]
+
           -z-10
+          pointer-events-none
         "
       />
 
@@ -41,9 +47,15 @@ function BackgroundGlow() {
           w-[500px]
           h-[500px]
           rounded-full
-          bg-blue-500/10
-          blur-[150px]
+
+          bg-blue-500/5
+          dark:bg-blue-500/10
+
+          blur-[100px]
+          dark:blur-[150px]
+
           -z-10
+          pointer-events-none
         "
       />
     </>
