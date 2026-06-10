@@ -5,26 +5,26 @@ function Highlights() {
   const stats = [
     {
       value: "3+",
-      label: "Years Experience",
+      label: "Years Frontend Experience",
       icon: "📅",
       gradient: "from-blue-600 to-blue-500",
     },
     {
-      value: "15+",
-      label: "ERP Modules",
-      icon: "📈",
+      value: "6+",
+      label: "Business Domains Delivered",
+      icon: "🏢",
       gradient: "from-green-600 to-green-500",
     },
     {
-      value: "10X",
-      label: "Revenue Growth",
-      icon: "🏆",
+      value: "12+",
+      label: "Production Applications Built",
+      icon: "🚀",
       gradient: "from-purple-600 to-purple-500",
     },
     {
-      value: "3+",
-      label: "Production Applications",
-      icon: "💻",
+      value: "100%",
+      label: "API-Driven UI Systems",
+      icon: "⚡",
       gradient: "from-pink-600 to-pink-500",
     },
   ];
@@ -87,13 +87,13 @@ function Highlights() {
           </h3>
 
           <div className="space-y-4 text-base text-gray-300">
-            <div>🏊 Reading Novels - stress reliever</div>
+            <div>📚 Reading Novels - stress reliever</div>
 
             <div>🐕 Feeding street dogs - giving back</div>
 
-            <div>🎮 Exploring new technologies & AI tools</div>
+            <div>🧠 Exploring new technologies & AI tools</div>
 
-            <div>☕ Continuous learning and self-improvement</div>
+            <div>📈 Continuous learning and self-improvement</div>
           </div>
         </PremiumCard>
 

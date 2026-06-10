@@ -4,80 +4,88 @@ const projects = [
     company: "Eucto Technologies",
 
     description:
-      "Developed multiple ERP modules including Attendance, Certificate Generation, Notice Board, Ledger Summary, Staff Management and Student Operations.",
+      "Developed a full-featured School ERP system with multiple interconnected modules for academic and administrative operations.",
 
-    tech: [
-      "React",
-      "Redux Toolkit",
-      "Material UI",
-      "Formik",
-      "REST API",
-    ],
+    tech: ["React", "Redux Toolkit", "Material UI", "Formik", "REST API"],
 
     impact: [
-      "15+ ERP modules",
-      "20+ reusable components",
-      "Optimized performance",
+      "ERP module development (Attendance, Certificate, Notice Board, Ledger, Staff, Student management)",
+      "Role-based admin and staff workflows",
     ],
   },
 
   {
-    title: "Effybuy Procurement Platform",
-    company: "Bizgam AI",
-
-    description:
-      "Built RFQ and Reverse Auction platform used for enterprise procurement workflows.",
-
-    tech: [
-      "React",
-      "Redux",
-      "JavaScript",
-      "REST API",
-    ],
-
-    impact: [
-      "40x revenue growth support",
-      "Enterprise procurement workflows",
-    ],
-  },
-
-  {
-    title: "Feature Flag Architecture",
-
+    title: "Admin Portals",
     company: "Eucto Technologies",
 
     description:
-      "Implemented dynamic feature enable/disable system for ERP modules without redeployment.",
+      "Built more then 10+ scalable admin dashboards and portals for business and operational management.",
 
-    tech: [
-      "React",
-      "Redux",
-      "Architecture",
-    ],
+    tech: ["React", "Material UI", "Redux", "REST API"],
 
     impact: [
-      "Faster releases",
-      "Safer deployments",
+      "Dynamic admin dashboard systems",
+      "Reusable UI components for multiple modules",
     ],
   },
 
   {
-    title: "Attendance Management System",
-
+    title: "Matrimony Application",
     company: "Eucto Technologies",
 
     description:
-      "Built dynamic attendance dashboard with filtering, reports and student tracking.",
+      "Worked on a matrimony platform focused on user profiles, search, and matching workflows.",
 
-    tech: [
-      "React",
-      "Material UI",
-      "REST API",
-    ],
+    tech: ["React", "Redux", "REST API"],
 
     impact: [
-      "Improved reporting",
-      "Better user experience",
+      "Profile management and search functionality",
+      "Responsive UI for user browsing experience",
+    ],
+  },
+
+  {
+    title: "Hospital CRM System",
+    company: "Eucto Technologies",
+
+    description:
+      "Developed CRM modules for hospital operations including patient and appointment management.",
+
+    tech: ["React", "Material UI", "REST API"],
+
+    impact: [
+      "Patient record and appointment workflows",
+      "Structured data management UI",
+    ],
+  },
+
+  {
+    title: "Company Websites",
+    company: "Eucto Technologies & Bizgam AI",
+
+    description:
+      "Developed responsive business and company websites with modern UI and reusable components.",
+
+    tech: ["React", "HTML", "CSS", "JavaScript"],
+
+    impact: [
+      "SEO-friendly responsive websites",
+      "Reusable UI component structure",
+    ],
+  },
+
+  {
+    title: "ERP & Procurement System",
+    company: "Bizgam AI Pvt Ltd",
+
+    description:
+      "Built enterprise ERP modules along with procurement workflows including RFQ and auction systems.",
+
+    tech: ["React", "Redux", "JavaScript", "REST API"],
+
+    impact: [
+      "Enterprise ERP module development",
+      "RFQ and auction workflow systems",
     ],
   },
 ];
