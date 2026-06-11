@@ -19,9 +19,7 @@ function Navbar() {
       },
     );
 
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
+    sections.forEach((section) => observer.observe(section));
 
     return () => observer.disconnect();
   }, []);
@@ -44,31 +42,104 @@ function Navbar() {
         left-0
         right-0
         z-50
-      bg-white/80
-      dark:bg-black/20
-        backdrop-blur-lg
+
+        bg-white/80
+        dark:bg-black/30
+
+        backdrop-blur-xl
+
         border-b
-      border-gray-200
-      dark:border-white/10
+        border-black/10
+        dark:border-white/10
+
+        transition-all
       "
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-center gap-8">
-        {navLinks.map((link) => (
-          <a
-            key={link.id}
-            href={`#${link.id}`}
-            className={`
-              transition-all duration-300
-              ${
-                activeSection === link.id
-                  ? "text-purple-400 font-semibold"
-                  : "text-gray-400 hover:text-gray-900 dark:text-white"
-              }
-            `}
-          >
-            {link.label}
-          </a>
-        ))}
+      <div
+        className="
+          max-w-7xl
+          mx-auto
+          px-6
+          py-4
+
+          flex
+          items-center
+          justify-between
+        "
+      >
+        {/* Logo */}
+
+        <a
+          href="#home"
+          className="
+            text-xl
+            font-bold
+
+            bg-gradient-to-r
+            from-purple-500
+            via-pink-500
+            to-blue-500
+
+            bg-clip-text
+            text-transparent
+          "
+        >
+          Dharani.
+        </a>
+
+        {/* Nav Links */}
+
+        <div
+          className="
+            hidden
+            md:flex
+            items-center
+            gap-8
+          "
+        >
+          {navLinks.map((link) => (
+            <a
+              key={link.id}
+              href={`#${link.id}`}
+              className={`
+                relative
+                text-sm
+                font-medium
+                transition-all
+                duration-300
+
+                ${
+                  activeSection === link.id
+                    ? "text-purple-500"
+                    : `
+                      text-gray-700
+                      dark:text-gray-300
+
+                      hover:text-purple-500
+                    `
+                }
+              `}
+            >
+              {link.label}
+
+              {activeSection === link.id && (
+                <span
+                  className="
+                    absolute
+                    left-0
+                    -bottom-2
+
+                    w-full
+                    h-[2px]
+
+                    bg-purple-500
+                    rounded-full
+                  "
+                />
+              )}
+            </a>
+          ))}
+        </div>
       </div>
     </nav>
   );

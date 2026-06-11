@@ -73,7 +73,7 @@ function Contact() {
         </a>
       </div>
 
-      <div className="mt-12 text-gray-500">Chennai, Tamil Nadu, India 🇮🇳</div>
+      {/* <div className="mt-12 text-gray-500">Chennai, Tamil Nadu, India 🇮🇳</div> */}
     </section>
   );
 }

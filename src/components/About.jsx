@@ -1,23 +1,10 @@
 import { motion } from "framer-motion";
+import SectionTitle from "./SectionTitle";
 
 function About() {
   return (
     <section id="about" className="max-w-6xl mx-auto px-6 py-10">
-      <motion.h2
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: 30 }}
-        viewport={{ once: true }}
-        className="
-          text-4xl
-          font-bold
-          mb-10
-
-          text-slate-900
-          dark:text-white
-        "
-      >
-        About Me
-      </motion.h2>
+      <SectionTitle title="About Me" />
 
       <motion.div
         whileInView={{ opacity: 1 }}

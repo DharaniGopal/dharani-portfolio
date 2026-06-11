@@ -5,7 +5,7 @@ function Education() {
   const education = [
     {
       degree: "Master of Computer Applications (MCA)",
-      institution: "Dr.Mahalingam College of Engineering and Technology",
+      institution: "Dr. Mahalingam College of Engineering and Technology",
       duration: "2018 - 2020",
     },
 
@@ -21,6 +21,8 @@ function Education() {
     "JavaScript ES6+",
     "Frontend Web Development",
     "Git & GitHub",
+    "Modern React Architecture",
+    "Frontend Performance Optimization",
   ];
 
   return (
@@ -31,25 +33,40 @@ function Education() {
         {/* Education */}
 
         <PremiumCard className="p-8">
-          <h3 className="text-2xl font-bold mb-8 text-purple-400">Education</h3>
+          <h3 className="text-2xl font-bold mb-8 text-purple-500">
+            Education
+          </h3>
 
-          {education.map((item) => (
-            <div key={item.degree}>
-              <h4 className="text-xl font-semibold">{item.degree}</h4>
+          <div className="space-y-8">
+            {education.map((item) => (
+              <div
+                key={item.degree}
+                className="
+                  border-l-2
+                  border-purple-500/30
+                  pl-5
+                "
+              >
+                <h4 className="text-xl font-semibold text-slate-900 dark:text-white">
+                  {item.degree}
+                </h4>
 
-              <p className="text-gray-400 mt-2">{item.institution}</p>
+                <p className="text-gray-700 dark:text-gray-400 mt-2">
+                  {item.institution}
+                </p>
 
-              <p className="text-gray-500 mt-2">{item.duration}</p>
-
-              <p className="text-green-400 mt-3">{item.score}</p>
-            </div>
-          ))}
+                <p className="text-gray-500 mt-2">
+                  {item.duration}
+                </p>
+              </div>
+            ))}
+          </div>
         </PremiumCard>
 
         {/* Certifications */}
 
         <PremiumCard className="p-8">
-          <h3 className="text-2xl font-bold mb-8 text-purple-400">
+          <h3 className="text-2xl font-bold mb-8 text-purple-500">
             Certifications & Learning
           </h3>
 
@@ -60,9 +77,17 @@ function Education() {
                 className="
                   p-4
                   rounded-xl
+
                   bg-purple-500/10
                   border
                   border-purple-500/20
+
+                  text-gray-700
+                  dark:text-gray-300
+
+                  hover:border-purple-500/40
+                  transition-all
+                  duration-300
                 "
               >
                 📜 {cert}

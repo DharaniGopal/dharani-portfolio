@@ -28,27 +28,36 @@ function Skills() {
               y: -5,
             }}
             className="
-                rounded-2xl
-                border
+              rounded-2xl
+              border
               border-black/10
               dark:border-white/10
-              bg-black/[0.03]
+
+              bg-white
               dark:bg-white/5
-                backdrop-blur-xl
-                p-6
+
+              shadow-md
+              dark:shadow-none
+
+              backdrop-blur-xl
+              p-6
+
               hover:border-purple-500/40
-                transition-all
-                duration-300
-              "
+              hover:shadow-xl
+
+              transition-all
+              duration-300
+            "
           >
             <h3
               className="
-                  text-xl
-                  font-semibold
-                  text-purple-400
-                  mb-5
-                  capitalize
-                "
+                text-xl
+                font-semibold
+                text-purple-600
+                dark:text-purple-400
+                mb-5
+                capitalize
+              "
             >
               {category.replace(/([A-Z])/g, " $1")}
             </h3>
@@ -58,17 +67,21 @@ function Skills() {
                 <span
                   key={item}
                   className="
-                      px-3
-                      py-2
-                      rounded-full
-                      text-sm
-                      bg-purple-500/10
-                      border
-                      border-purple-500/20
-                      text-gray-300
-                      hover:bg-purple-500/20
-                      transition-all
-                    "
+                    px-3
+                    py-2
+                    rounded-full
+                    text-sm
+
+                    bg-purple-500/10
+                    border
+                    border-purple-500/20
+
+                    text-gray-700
+                    dark:text-gray-300
+
+                    hover:bg-purple-500/20
+                    transition-all
+                  "
                 >
                   {item}
                 </span>

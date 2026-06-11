@@ -10,6 +10,7 @@ function Experience() {
 
       <div className="relative mt-16">
         {/* Timeline Line */}
+
         <div className="absolute left-4 top-0 bottom-0 w-[2px] bg-purple-500/30"></div>
 
         {experience.map((item, index) => (
@@ -31,6 +32,7 @@ function Experience() {
             className="relative pl-16 mb-16"
           >
             {/* Timeline Dot */}
+
             <div
               className="
                 absolute
@@ -41,17 +43,23 @@ function Experience() {
                 rounded-full
                 bg-purple-500
                 border-4
-                border-[#0f172a]
+                border-white
+                dark:border-[#0f172a]
               "
             />
 
-            <PremiumCard className="p-8">
+            <PremiumCard className="p-8 hover:scale-[1.01] transition-all duration-300">
               {/* Header */}
+
               <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-3">
                 <div>
-                  <h3 className="text-2xl font-bold text-white">{item.role}</h3>
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
+                    {item.role}
+                  </h3>
 
-                  <p className="text-purple-400 text-lg">{item.company}</p>
+                  <p className="text-purple-500 text-lg font-medium">
+                    {item.company}
+                  </p>
                 </div>
 
                 <span
@@ -63,7 +71,8 @@ function Experience() {
                     border
                     border-purple-500/30
                     bg-purple-500/10
-                    text-purple-300
+                    text-purple-700
+                    dark:text-purple-300
                     w-fit
                   "
                 >
@@ -72,8 +81,9 @@ function Experience() {
               </div>
 
               {/* Achievements */}
+
               <div className="mt-6">
-                <h4 className="text-white font-semibold mb-4">
+                <h4 className="text-slate-900 dark:text-white font-semibold mb-4">
                   Key Achievements
                 </h4>
 
@@ -81,9 +91,16 @@ function Experience() {
                   {item.achievements.map((achievement) => (
                     <li
                       key={achievement}
-                      className="text-gray-400 flex items-start gap-3"
+                      className="
+                        text-gray-700
+                        dark:text-gray-400
+                        flex
+                        items-start
+                        gap-3
+                      "
                     >
-                      <span className="text-purple-400 mt-1">▹</span>
+                      <span className="text-purple-500 mt-1">▹</span>
+
                       <span>{achievement}</span>
                     </li>
                   ))}
@@ -91,8 +108,11 @@ function Experience() {
               </div>
 
               {/* Tech Stack */}
+
               <div className="mt-8">
-                <h4 className="text-white font-semibold mb-4">Technologies</h4>
+                <h4 className="text-slate-900 dark:text-white font-semibold mb-4">
+                  Technologies
+                </h4>
 
                 <div className="flex flex-wrap gap-3">
                   {item.tech.map((tech) => (
@@ -103,10 +123,17 @@ function Experience() {
                         py-2
                         rounded-full
                         text-sm
+
                         bg-purple-500/10
                         border
                         border-purple-500/20
-                        text-purple-300
+
+                        text-purple-700
+                        dark:text-purple-300
+
+                        hover:border-purple-500/40
+                        transition-all
+                        duration-300
                       "
                     >
                       {tech}

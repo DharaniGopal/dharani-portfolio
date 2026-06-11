@@ -10,11 +10,40 @@ function Projects() {
       <div className="grid md:grid-cols-2 gap-8">
         {projects.map((project) => (
           <PremiumCard key={project.title} className="p-8">
-            <p className="text-purple-400 text-sm">{project.company}</p>
+            {/* Company */}
 
-            <h3 className="text-2xl font-bold mt-2">{project.title}</h3>
+            <p className="text-purple-500 font-medium text-sm">
+              {project.company}
+            </p>
 
-            <p className="text-gray-400 mt-4">{project.description}</p>
+            {/* Project Title */}
+
+            <h3
+              className="
+                text-2xl
+                font-bold
+                mt-2
+                text-gray-900
+                dark:text-white
+              "
+            >
+              {project.title}
+            </h3>
+
+            {/* Description */}
+
+            <p
+              className="
+                mt-4
+                leading-7
+                text-gray-600
+                dark:text-gray-400
+              "
+            >
+              {project.description}
+            </p>
+
+            {/* Technologies */}
 
             <div className="flex flex-wrap gap-2 mt-6">
               {project.tech.map((tech) => (
@@ -24,10 +53,18 @@ function Projects() {
                     px-3
                     py-1
                     rounded-full
-                    bg-purple-500/10
-                    border
-                    border-purple-500/20
                     text-sm
+                    font-medium
+
+                    bg-purple-100
+                    dark:bg-purple-500/10
+
+                    border
+                    border-purple-200
+                    dark:border-purple-500/20
+
+                    text-purple-700
+                    dark:text-purple-300
                   "
                 >
                   {tech}
@@ -35,9 +72,22 @@ function Projects() {
               ))}
             </div>
 
-            <ul className="mt-6 space-y-2 text-gray-400">
+            {/* Impact */}
+
+            <ul
+              className="
+                mt-6
+                space-y-3
+                text-gray-700
+                dark:text-gray-400
+              "
+            >
               {project.impact.map((item) => (
-                <li key={item}>✓ {item}</li>
+                <li key={item} className="flex items-start gap-2">
+                  <span className="text-green-500 mt-0.5">✓</span>
+
+                  <span>{item}</span>
+                </li>
               ))}
             </ul>
           </PremiumCard>
